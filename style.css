@@ -3,18 +3,31 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f0f8ff; /* Light blue background */
 }
 
 header {
-    background: #333;
+    background: linear-gradient(to right, #4a90e2, #50e3c2); /* Gradient background */
     color: #fff;
     padding: 20px;
     text-align: center;
+    border-bottom: 5px solid #fff; /* White border at the bottom */
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em; /* Larger title font */
 }
 
 h2 {
-    color: #333;
+    color: #4a90e2; /* Color for section headers */
+    border-bottom: 2px solid #50e3c2; /* Underline for section headers */
+    padding-bottom: 10px;
+}
+
+p {
+    color: #333; /* Darker color for paragraphs */
+    padding: 0 20px; /* Add padding for better readability */
 }
 
 ul {
@@ -24,6 +37,15 @@ ul {
 
 ul li {
     margin: 10px 0;
+    background: #fff; /* White background for list items */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside list items */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+ul li:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 footer {
@@ -31,4 +53,18 @@ footer {
     padding: 10px 0;
     background: #333;
     color: #fff;
+    position: relative; /* Position for styling */
+}
+
+footer p {
+    margin: 5px; /* Margin for footer text */
+}
+
+a {
+    color: #50e3c2; /* Color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
 }
